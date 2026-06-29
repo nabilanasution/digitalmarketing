@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nabila Aulia | Digital Marketing Portfolio</title>
+  <meta name="description" content="Digital Marketing Portfolio of Nabila Aulia — Performance Marketing, Google Ads, Meta Ads, LinkedIn Ads, campaign strategy, and client growth." />
+
+  <style>
+    :root {
+      --ink: #141313;
+      --ink-2: #23201e;
+      --cream: #f8f3e9;
+      --warm: #efe4d0;
+      --champagne: #c7a76c;
+      --champagne-dark: #9b7c43;
+      --sage: #9aa28d;
+      --stone: #6f6a63;
+      --line: rgba(20, 19, 19, 0.12);
+      --card: #fffaf1;
+      --soft: #f1e7d6;
+      --max: 1160px;
+      --radius: 30px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at 12% 0%, rgba(199, 167, 108, 0.28), transparent 28%),
+        linear-gradient(180deg, var(--cream) 0%, #f5eddf 46%, #eee1ce 100%);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(100% - 40px, var(--max));
+      margin: 0 auto;
+    }
+
+    .top-strip {
+      background: var(--ink);
+      color: var(--cream);
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 10px 16px;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(248, 243, 233, 0.84);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1rem;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+    }
+
+    .brand-mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 12px;
+      background: var(--ink);
+      color: var(--champagne);
+      display: grid;
+      place-items: center;
+      font-size: 0.82rem;
+      letter-spacing: -0.03em;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 250, 241, 0.72);
+    }
+
+    .nav-links a {
+      padding: 9px 13px;
+      border-radius: 999px;
+      color: var(--stone);
+      font-weight: 700;
+      font-size: 0.86rem;
+    }
+
+    .nav-links a:hover {
+      background: var(--ink);
+      color: var(--cream);
+    }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 17px;
+      border-radius: 999px;
+      background: var(--champagne);
+      color: var(--ink);
+      font-size: 0.88rem;
+      font-weight: 900;
+      border: 1px solid rgba(20, 19, 19, 0.12);
+      box-shadow: 0 12px 24px rgba(155, 124, 67, 0.18);
+    }
+
+    .hero {
+      padding: 92px 0 46px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.07fr 0.93fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .hero-copy {
+      min-height: 620px;
+      border-radius: 40px;
+      background:
+        linear-gradient(135deg, rgba(255, 250, 241, 0.78), rgba(241, 231, 214, 0.7)),
+        linear-gradient(135deg, transparent, rgba(199, 167, 108, 0.16));
+      border: 1px solid var(--line);
+      padding: clamp(30px, 5vw, 58px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-copy::after {
+      content: "";
+      position: absolute;
+      width: 340px;
+      height: 340px;
+      right: -150px;
+      top: -150px;
+      border-radius: 50%;
+      background: rgba(199, 167, 108, 0.18);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 13px;
+      border-radius: 999px;
+      background: var(--ink);
+      color: var(--cream);
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      margin-bottom: 24px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 99px;
+      background: var(--champagne);
+    }
+
+    h1 {
+      font-size: clamp(3rem, 8.4vw, 7.6rem);
+      line-height: 0.86;
+      letter-spacing: -0.09em;
+      text-transform: uppercase;
+      max-width: 830px;
+      margin-bottom: 24px;
+    }
+
+    .hero-intro {
+      color: var(--stone);
+      max-width: 680px;
+      font-size: clamp(1.02rem, 1.4vw, 1.18rem);
+      margin-bottom: 32px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 13px 20px;
+      border-radius: 999px;
+      font-weight: 900;
+      font-size: 0.93rem;
+      border: 1px solid transparent;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--ink);
+      color: var(--cream);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 32px rgba(20, 19, 19, 0.18);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--ink);
+      border-color: var(--line);
+    }
+
+    .btn-secondary:hover {
+      background: var(--soft);
+    }
+
+    .hero-panel {
+      display: grid;
+      gap: 16px;
+    }
+
+    .portrait-card {
+      min-height: 360px;
+      border-radius: 40px;
+      background:
+        linear-gradient(160deg, rgba(20, 19, 19, 0.08), rgba(199, 167, 108, 0.24)),
+        linear-gradient(135deg, #2d2924 0%, #151413 100%);
+      color: var(--cream);
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      position: relative;
+      border: 1px solid rgba(20, 19, 19, 0.12);
+    }
+
+    .portrait-card::before {
+      content: "";
+      position: absolute;
+      width: 290px;
+      height: 290px;
+      right: -110px;
+      bottom: -105px;
+      border-radius: 50%;
+      border: 40px solid rgba(199, 167, 108, 0.18);
+    }
+
+    .portrait-card::after {
+      content: "PERFORMANCE MARKETING";
+      position: absolute;
+      left: 28px;
+      bottom: 32px;
+      font-size: clamp(2.8rem, 6vw, 5.4rem);
+      line-height: 0.78;
+      letter-spacing: -0.08em;
+      font-weight: 900;
+      opacity: 0.08;
+      max-width: 420px;
+    }
+
+    .portrait-top,
+    .portrait-bottom {
+      position: relative;
+      z-index: 1;
+    }
+
+    .mini-label {
+      font-size: 0.76rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--champagne);
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    .portrait-card h2 {
+      font-size: 2.1rem;
+      line-height: 0.98;
+      letter-spacing: -0.06em;
+      text-transform: uppercase;
+      max-width: 360px;
+    }
+
+    .portrait-card p {
+      color: rgba(248, 243, 233, 0.78);
+      max-width: 440px;
+      font-size: 0.96rem;
+    }
+
+    .stats-card {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .stat {
+      min-height: 150px;
+      border-radius: 28px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 2.3rem;
+      line-height: 0.9;
+      letter-spacing: -0.08em;
+      color: var(--ink);
+    }
+
+    .stat span {
+      color: var(--stone);
+      font-weight: 700;
+      font-size: 0.88rem;
+    }
+
+    .benefits {
+      padding: 26px 0 44px;
+    }
+
+    .benefit-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .benefit {
+      background: var(--ink);
+      color: var(--cream);
+      border-radius: 28px;
+      min-height: 150px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .benefit::after {
+      content: "";
+      width: 76px;
+      height: 76px;
+      position: absolute;
+      right: -18px;
+      bottom: -18px;
+      border-radius: 24px;
+      background: rgba(199, 167, 108, 0.16);
+      transform: rotate(12deg);
+    }
+
+    .benefit-number {
+      color: var(--champagne);
+      font-weight: 900;
+      font-size: 0.82rem;
+    }
+
+    .benefit h3 {
+      position: relative;
+      z-index: 1;
+      font-size: 1.02rem;
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+      max-width: 160px;
+    }
+
+    section {
+      padding: 58px 0;
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 24px;
+      align-items: end;
+      margin-bottom: 24px;
+    }
+
+    .section-tag {
+      color: var(--champagne-dark);
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(2.2rem, 5vw, 5.2rem);
+      line-height: 0.9;
+      letter-spacing: -0.09em;
+      text-transform: uppercase;
+    }
+
+    .section-head p {
+      color: var(--stone);
+      font-size: 1.02rem;
+      max-width: 610px;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .service-card {
+      min-height: 330px;
+      padding: 26px;
+      border-radius: 34px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: 0.2s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 36px rgba(95, 75, 42, 0.12);
+    }
+
+    .icon-box {
+      width: 62px;
+      height: 62px;
+      border-radius: 22px;
+      background: var(--ink);
+      color: var(--champagne);
+      display: grid;
+      place-items: center;
+      font-size: 1.4rem;
+      font-weight: 900;
+      margin-bottom: 28px;
+    }
+
+    .service-card h3 {
+      font-size: 1.45rem;
+      line-height: 1;
+      letter-spacing: -0.06em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      color: var(--stone);
+      font-size: 0.96rem;
+    }
+
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .work-card {
+      min-height: 390px;
+      border-radius: 36px;
+      padding: 28px;
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, var(--card), #f6eddc);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .work-card.dark {
+      background: var(--ink);
+      color: var(--cream);
+    }
+
+    .work-card::after {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      right: -80px;
+      top: -80px;
+      border-radius: 50%;
+      background: rgba(199, 167, 108, 0.16);
+    }
+
+    .work-card .case-type,
+    .work-card h3,
+    .work-card p,
+    .work-card ul {
+      position: relative;
+      z-index: 1;
+    }
+
+    .case-type {
+      color: var(--champagne-dark);
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 900;
+      margin-bottom: 18px;
+    }
+
+    .dark .case-type {
+      color: var(--champagne);
+    }
+
+    .work-card h3 {
+      font-size: clamp(1.8rem, 3vw, 2.8rem);
+      line-height: 0.95;
+      letter-spacing: -0.08em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      max-width: 500px;
+    }
+
+    .work-card p {
+      color: var(--stone);
+      max-width: 540px;
+    }
+
+    .dark p,
+    .dark li {
+      color: rgba(248, 243, 233, 0.74);
+    }
+
+    .work-card ul {
+      padding-left: 18px;
+      margin-top: 20px;
+      color: var(--stone);
+    }
+
+    .work-card li {
+      margin-bottom: 8px;
+    }
+
+
+    .proof-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    .proof-card {
+      border-radius: 38px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      padding: 28px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 22px 45px rgba(95, 75, 42, 0.10);
+    }
+
+    .proof-card::after {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      right: -100px;
+      top: -110px;
+      border-radius: 50%;
+      background: rgba(199, 167, 108, 0.16);
+      pointer-events: none;
+    }
+
+    .proof-copy {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 24px;
+      align-items: end;
+      margin-bottom: 22px;
+    }
+
+    .proof-copy h3 {
+      font-size: clamp(1.9rem, 3.6vw, 4rem);
+      line-height: 0.92;
+      letter-spacing: -0.08em;
+      text-transform: uppercase;
+      max-width: 560px;
+    }
+
+    .proof-copy p {
+      color: var(--stone);
+      max-width: 620px;
+      font-size: 0.98rem;
+    }
+
+    .proof-meta {
+      color: var(--champagne-dark);
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+
+    .proof-shot {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      display: block;
+      border-radius: 26px;
+      border: 1px solid rgba(20, 19, 19, 0.14);
+      background: #fff;
+      box-shadow: 0 18px 40px rgba(20, 19, 19, 0.10);
+    }
+
+    .proof-note {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .proof-note span {
+      padding: 10px 13px;
+      border-radius: 999px;
+      background: rgba(20, 19, 19, 0.06);
+      color: var(--stone);
+      font-size: 0.84rem;
+      font-weight: 800;
+    }
+
+
+    .timeline {
+      display: grid;
+      gap: 14px;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 210px 1fr;
+      gap: 22px;
+      align-items: start;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      padding: 24px;
+    }
+
+    .timeline-date {
+      font-weight: 900;
+      color: var(--champagne-dark);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-size: 0.86rem;
+    }
+
+    .timeline-content h3 {
+      font-size: 1.25rem;
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .timeline-content p {
+      color: var(--stone);
+    }
+
+    .skills-board {
+      border-radius: 40px;
+      background: var(--ink);
+      color: var(--cream);
+      padding: 30px;
+      border: 1px solid rgba(20, 19, 19, 0.16);
+      display: grid;
+      grid-template-columns: 0.6fr 1.4fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .skills-board h3 {
+      font-size: clamp(1.9rem, 3.8vw, 4.4rem);
+      line-height: 0.88;
+      letter-spacing: -0.08em;
+      text-transform: uppercase;
+    }
+
+    .skills-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill-pill {
+      padding: 12px 14px;
+      border-radius: 999px;
+      background: rgba(248, 243, 233, 0.08);
+      border: 1px solid rgba(248, 243, 233, 0.12);
+      color: rgba(248, 243, 233, 0.78);
+      font-weight: 800;
+      font-size: 0.88rem;
+    }
+
+    .contact {
+      padding: 86px 0 72px;
+    }
+
+    .contact-card {
+      border-radius: 44px;
+      background:
+        linear-gradient(135deg, rgba(199, 167, 108, 0.22), rgba(248, 243, 233, 0.8)),
+        var(--card);
+      border: 1px solid var(--line);
+      padding: clamp(30px, 6vw, 64px);
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 36px;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-card::before {
+      content: "";
+      position: absolute;
+      inset: 18px;
+      border: 1px solid rgba(20, 19, 19, 0.08);
+      border-radius: 32px;
+      pointer-events: none;
+    }
+
+    .contact-card h2 {
+      position: relative;
+      z-index: 1;
+      font-size: clamp(2.6rem, 5.4vw, 6rem);
+      line-height: 0.84;
+      letter-spacing: -0.09em;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    .contact-card p {
+      position: relative;
+      z-index: 1;
+      color: var(--stone);
+      max-width: 650px;
+    }
+
+    .contact-links {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      gap: 12px;
+    }
+
+    .contact-link {
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: rgba(255, 250, 241, 0.76);
+      border: 1px solid var(--line);
+      font-weight: 850;
+      color: var(--ink);
+      word-break: break-word;
+    }
+
+    .contact-link:hover {
+      background: var(--ink);
+      color: var(--cream);
+    }
+
+    footer {
+      padding: 26px 0 46px;
+      color: var(--stone);
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 940px) {
+      .hero-grid,
+      .section-head,
+      .service-grid,
+      .work-grid,
+      .proof-copy,
+      .skills-board,
+      .contact-card {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-copy {
+        min-height: auto;
+      }
+
+      .benefit-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .container {
+        width: min(100% - 28px, var(--max));
+      }
+
+      .top-strip {
+        font-size: 0.68rem;
+      }
+
+      .hero {
+        padding-top: 50px;
+      }
+
+      .hero-copy,
+      .portrait-card,
+      .contact-card {
+        border-radius: 30px;
+      }
+
+      .stats-card,
+      .benefit-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .timeline-item {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-cta {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-strip">Digital Marketing • Paid Media • Lead Generation • Campaign Strategy</div>
+
+  <header>
+    <div class="container nav">
+      <a href="#" class="brand">
+        <span class="brand-mark">NA</span>
+        Nabila Aulia
+      </a>
+
+      <nav class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#case-studies">Work</a>
+        <a href="#proof">Proof</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="#contact" class="nav-cta">Hire Me</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div>
+            <div class="eyebrow">Performance Marketing Portfolio</div>
+            <h1>Grow faster with smarter paid marketing.</h1>
+            <p class="hero-intro">
+              I’m Nabila Aulia, a digital marketing specialist focused on paid media,
+              lead generation, campaign optimization, and client-ready reporting.
+              I help brands turn traffic into qualified leads through clear strategy,
+              practical testing, and data-backed decisions.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#case-studies" class="btn btn-primary">View My Work</a>
+              <a href="mailto:nabilanasution27@gmail.com" class="btn btn-secondary">Email Me</a>
+            </div>
+          </div>
+
+          <div class="hero-actions" aria-label="Core platforms">
+            <span class="btn btn-secondary">Google Ads</span>
+            <span class="btn btn-secondary">Meta Ads</span>
+            <span class="btn btn-secondary">LinkedIn Ads</span>
+          </div>
+        </div>
+
+        <aside class="hero-panel">
+          <div class="portrait-card">
+            <div class="portrait-top">
+              <div class="mini-label">Available for Digital Marketing Roles</div>
+              <h2>Paid media with a client-first mindset.</h2>
+            </div>
+
+            <div class="portrait-bottom">
+              <p>
+                Strategy, optimization, reporting, and communication — built for teams
+                that need someone who can understand both campaign data and client context.
+              </p>
+            </div>
+          </div>
+
+          <div class="stats-card">
+            <div class="stat">
+              <strong>300+</strong>
+              <span>Google Ads clients managed</span>
+            </div>
+            <div class="stat">
+              <strong>85%+</strong>
+              <span>paid marketing revenue uplift</span>
+            </div>
+            <div class="stat">
+              <strong>120%+</strong>
+              <span>landing page conversion lift</span>
+            </div>
+            <div class="stat">
+              <strong>95%+</strong>
+              <span>client satisfaction score</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="container benefit-grid">
+        <article class="benefit">
+          <div class="benefit-number">01</div>
+          <h3>Clear campaign structure</h3>
+        </article>
+        <article class="benefit">
+          <div class="benefit-number">02</div>
+          <h3>Lead generation focus</h3>
+        </article>
+        <article class="benefit">
+          <div class="benefit-number">03</div>
+          <h3>Practical optimization</h3>
+        </article>
+        <article class="benefit">
+          <div class="benefit-number">04</div>
+          <h3>Client-ready reporting</h3>
+        </article>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-tag">What I bring</div>
+            <h2>Digital marketing support that makes work easier.</h2>
+          </div>
+          <p>
+            Similar to a lean agency workflow, I focus on making campaigns easier to understand,
+            easier to improve, and easier for stakeholders to act on.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <div>
+              <div class="icon-box">01</div>
+              <h3>Paid Media Strategy</h3>
+              <p>
+                Campaign planning across Google Ads, Meta Ads, and LinkedIn Ads based on funnel stage,
+                intent, budget, and business objectives.
+              </p>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div>
+              <div class="icon-box">02</div>
+              <h3>Performance Optimization</h3>
+              <p>
+                Search term review, negative keyword refinement, creative testing, bid strategy review,
+                budget movement, and landing page recommendations.
+              </p>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div>
+              <div class="icon-box">03</div>
+              <h3>Reporting & Insights</h3>
+              <p>
+                Simple performance summaries, client-friendly explanations, campaign next steps,
+                and clear recommendations for both technical and non-technical teams.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="case-studies">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-tag">Selected Work</div>
+            <h2>Campaign experience across multiple industries.</h2>
+          </div>
+          <p>
+            A snapshot of relevant campaign work across Google Ads consulting, B2B lead generation,
+            luxury marketing, and education campaign planning.
+          </p>
+        </div>
+
+        <div class="work-grid">
+          <article class="work-card dark">
+            <div>
+              <div class="case-type">Google Ads / Portfolio Growth</div>
+              <h3>Scaled support across 300+ advertisers.</h3>
+              <p>
+                Managed a large portfolio of Indonesian Google Ads clients across SMB to enterprise
+                segments, supporting campaign strategy, optimization, and performance reviews.
+              </p>
+            </div>
+            <ul>
+              <li>Advised business owners, C-level stakeholders, and agencies on Google Ads strategy.</li>
+              <li>Worked across Search, Display, Video, Performance Max, remarketing, and landing page optimization.</li>
+              <li>Recognized as a top performer within the Indonesia market team.</li>
+            </ul>
+          </article>
+
+          <article class="work-card">
+            <div>
+              <div class="case-type">B2B Lead Generation</div>
+              <h3>LinkedIn and Google support for industrial IoT.</h3>
+              <p>
+                Supported B2B lead generation campaigns for a machine monitoring and industrial
+                technology solution, balancing awareness, traffic, and lead capture.
+              </p>
+            </div>
+            <ul>
+              <li>Reviewed LinkedIn lead form performance and creative-level results.</li>
+              <li>Identified stronger-performing ads and recommended budget movement toward better lead sources.</li>
+              <li>Suggested Google Lead Forms while waiting for full website conversion tracking.</li>
+            </ul>
+          </article>
+
+          <article class="work-card">
+            <div>
+              <div class="case-type">Luxury / Search & Display</div>
+              <h3>Refined search and display for luxury jewellery.</h3>
+              <p>
+                Worked on campaign refinement for a Singapore luxury jewellery brand, with attention
+                to search intent, competitor targeting, premium messaging, and lead quality.
+              </p>
+            </div>
+            <ul>
+              <li>Optimized search terms and negative keywords to improve traffic relevance.</li>
+              <li>Developed display ad copy directions for bespoke and competitor-intent campaigns.</li>
+              <li>Supported client updates on lead quality, IP blocking, and competitor targeting proposals.</li>
+            </ul>
+          </article>
+
+          <article class="work-card dark">
+            <div>
+              <div class="case-type">Education / Local Campaigns</div>
+              <h3>Planned campaign setup for education growth.</h3>
+              <p>
+                Supported campaign planning for education-related brands, including branch-focused
+                acquisition, parent audiences, and lead generation campaign setup.
+              </p>
+            </div>
+            <ul>
+              <li>Prepared platform access requirements across Meta Ads, GA4, and Google Tag Manager.</li>
+              <li>Created simple client-facing explanations for campaign setup and reporting.</li>
+              <li>Aligned campaign objectives with student acquisition and local branch growth.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="proof">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-tag">Platform Proof</div>
+            <h2>Real campaign dashboard, client details protected.</h2>
+          </div>
+          <p>
+            A redacted Google Ads dashboard view added as visual proof of hands-on paid media work.
+            Client identifiers, account details, and campaign names have been hidden for confidentiality.
+          </p>
+        </div>
+
+        <article class="proof-card">
+          <div class="proof-copy">
+            <div>
+              <div class="proof-meta">Google Ads / Redacted Performance View</div>
+              <h3>Campaign performance shown safely.</h3>
+            </div>
+            <p>
+              This screenshot highlights paid media scale, conversion volume, and cost-per-conversion
+              while keeping client names, account IDs, emails, and campaign naming confidential.
+            </p>
+          </div>
+
+          <img
+            class="proof-shot"
+            src="google-ads-portfolio-proof.png"
+            alt="Redacted Google Ads performance dashboard showing cost, conversions, clicks, and cost per conversion"
+          />
+
+          <div class="proof-note" aria-label="Redaction notes">
+            <span>Client name hidden</span>
+            <span>Account ID hidden</span>
+            <span>Campaign names hidden</span>
+            <span>Portfolio-safe proof</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-tag">Experience</div>
+            <h2>Built from ads, clients, and growth work.</h2>
+          </div>
+          <p>
+            My background combines paid media consulting, agency-side campaign work,
+            stakeholder management, and business development experience.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2024 — Present</div>
+            <div class="timeline-content">
+              <h3>Digital Marketing / Performance Marketing</h3>
+              <p>
+                Managing and supporting paid media campaigns across Google, Meta, and LinkedIn
+                for brands in B2B, luxury, education, and lead generation-focused industries.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">2022 — 2023</div>
+            <div class="timeline-content">
+              <h3>Digital Marketing Campaign Consultant — Google Ads Project</h3>
+              <p>
+                Managed 300+ Google Ads clients in the Indonesia market, providing strategic
+                recommendations, account reviews, optimization plans, and performance support.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">Earlier</div>
+            <div class="timeline-content">
+              <h3>Business Development & Marketing — F&B Expansion</h3>
+              <p>
+                Supported brand growth and market expansion from Bandung to the Jakarta metropolitan area,
+                combining sales, customer relationships, operations, and digital campaign execution.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="skills-board">
+          <h3>Tools & Skills</h3>
+
+          <div class="skills-wrap">
+            <span class="skill-pill">Google Ads</span>
+            <span class="skill-pill">Meta Ads</span>
+            <span class="skill-pill">LinkedIn Ads</span>
+            <span class="skill-pill">Google Analytics 4</span>
+            <span class="skill-pill">Google Tag Manager</span>
+            <span class="skill-pill">Looker Studio</span>
+            <span class="skill-pill">Keyword Research</span>
+            <span class="skill-pill">Search Term Optimization</span>
+            <span class="skill-pill">Negative Keywords</span>
+            <span class="skill-pill">Lead Generation</span>
+            <span class="skill-pill">Landing Page Review</span>
+            <span class="skill-pill">A/B Testing</span>
+            <span class="skill-pill">Budget Optimization</span>
+            <span class="skill-pill">Performance Reporting</span>
+            <span class="skill-pill">Client Communication</span>
+            <span class="skill-pill">Campaign Strategy</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-card">
+          <div>
+            <h2>Ready to grow with smarter campaigns?</h2>
+            <p>
+              I’m open to digital marketing, performance marketing, paid media, and growth roles.
+              Reach out for opportunities, interviews, or portfolio discussions.
+            </p>
+          </div>
+
+          <div class="contact-links">
+            <a class="contact-link" href="mailto:nabilanasution27@gmail.com">nabilanasution27@gmail.com</a>
+            <a class="contact-link" href="https://www.linkedin.com/in/nabilanasutionn/" target="_blank" rel="noopener">linkedin.com/in/nabilanasutionn</a>
+            <span class="contact-link">Indonesia / Remote / Open to Opportunities</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 Nabila Aulia — Digital Marketing Portfolio
+    </div>
+  </footer>
+</body>
+</html>
